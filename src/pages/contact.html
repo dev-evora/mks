@@ -1,0 +1,161 @@
+{% extends 'common/_layout.html' %}
+{% set site_title = 'Контакты' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container">
+    <div class="contact-row">
+      <div class="contact-main">
+        <h2 class="title">Контакты</h2>
+        <ul class="contact-list">
+          <li>
+            <span><p>Адрес:</p></span>
+            <span>
+              <p>195273, Санкт-Петербург, Пискаревский проспект, д. 63, оф.421</p>
+              <p>195273, Санкт-Петербург, Пискаревский проспект, д. 63, оф.421</p>
+            </span>
+          </li>
+          <li>
+            <span><p>Контактный телефон:</p></span>
+            <span><p><a href="tel:8 (812) 702-38-39">8 (812) 702-38-39</a></p></span>
+          </li>
+          <li>
+            <span><p>E-mail</p></span>
+            <span><p><a href="mailto:zakaz@omtkmi.ru">zakaz@omtkmi.ru</a></p></span>
+          </li>
+        </ul>
+        <div class="contact-map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A376331a35339da4e112f834e8c9fbf2f195cb5e9a3d36387593aeb4becc9a135&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script></div>
+        <a href="#" class="contact-map__link">Посмотреть схему проезда</a>
+      </div>
+      <div class="contact-form">
+        <h2 class="title center">Обратная связь</h2>
+        <form action="#" class="basket-form">
+          <div class="basket-form__row">
+            <label class="checkbox">
+              <input type="radio" name="type" />
+              <p>Юридическое лицо</p>
+            </label>
+            <label class="checkbox">
+              <input type="radio" name="type" />
+              <p>Физическое лицо</p>
+            </label>
+          </div>
+          <input type="text" class="input" placeholder="ФИО" />
+          <input type="tel" class="input masked" placeholder="Телефон" />
+          <input type="email" class="input" placeholder="E-mail" />
+          <textarea class="textarea" placeholder="Комментарий"></textarea>
+          <div class="btn-wrap">
+          <label class="checkbox">
+            <input type="checkbox" name="politic" />
+            <p>Согласен на обработку персональных данных</p>
+          </label>
+          </div>
+          <div class="btn-wrap"><button class="btn">Получить счет</button></div>
+        </form>
+      </div>
+    </div>
+    <div class="contact-data">
+      <div class="contact-data__item">
+        <h3 class="title-md">Правовая информация</h3>
+        <ul>
+          <li>
+            <span>Наименование компании (полное наименование)</span>
+            <span>Общество с ограниченной ответственностью «ОМТК Металл Инвест»</span>
+          </li>
+          <li>
+            <span>Наименование компании (сокращенное наименование)</span>
+            <span>ООО «ОМТК Металл Инвест»</span>
+          </li>
+          <li>
+            <span>ИНН</span>
+            <span>7811696871</span>
+          </li>
+          <li>
+            <span>КПП</span>
+            <span>781101001</span>
+          </li>
+          <li>
+            <span>ОГРН</span>
+            <span>1187847155847</span>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-data__item">
+        <h3 class="title-md">Банковские реквизиты</h3>
+        <ul>
+          <li>
+            <span>Расчетный счет</span>
+            <span>40702810303500009304</span>
+          </li>
+          <li>
+            <span>Банк</span>
+            <span>Филиал Точка Публичного акционерного общества Банка «Финансовая Корпорация Открытие»</span>
+          </li>
+          <li>
+            <span>Корреспондентский счет</span>
+            <span>30101810845250000999</span>
+          </li>
+          <li>
+            <span>БИК</span>
+            <span>044525999</span>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-data__item">
+        <h3 class="title-md">Адресная информация</h3>
+        <ul>
+          <li>
+            <span>Юридический адрес</span>
+            <span>192029, Санкт-Петербург, Обуховской обороны, д. 86, А</span>
+          </li>
+          <li>
+            <span>Почтовый адрес</span>
+            <span>195273, Санкт-Петербург, Пискаревский проспект, д. 63, оф.421</span>
+          </li>
+          <li>
+            <span>Телефон</span>
+            <span>8 (812) 702-38-39,  8 (812) 702-38-37</span>
+          </li>
+          <li>
+            <span>E-mail</span>
+            <span>zakaz@omtkmi.ru</span>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-data__item">
+        <h3 class="title-md">Представитель</h3>
+        <h4 class="title-sm">Руководитель компании</h4>
+        <ul>
+          <li>
+            <span>Должность:</span>
+            <span>Генеральный директор</span>
+          </li>
+          <li>
+            <span>ФИО:</span>
+            <span>Хохлов Михаил Юрьевич</span>
+          </li>
+          <li>
+            <span>Действует на основании:</span>
+            <span>Устава</span>
+          </li>
+          <li>
+            <span>Контактный телефон:</span>
+            <span>8 (812) 702-38-39<br>8 (812) 648-58-88</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

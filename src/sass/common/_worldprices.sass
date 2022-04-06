@@ -1,0 +1,26 @@
+.worldprices
+  padding: 100px 0
+  &-text
+    max-width: 800px
+    width: 100%
+    margin-left: auto
+    position: relative
+  &-img
+    position: absolute
+    z-index: -1
+    top: 60px
+    left: -660px
+  &-list
+    @include flexbox
+    align-items: center
+    justify-content: space-between
+    li
+      margin-top: 60px
+      width: calc(100% / 2 - 30px)
+      @include flexbox
+      align-items: center
+      img
+        width: 80px
+      p
+        flex: 1
+        margin-left: 40px

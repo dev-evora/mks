@@ -1,0 +1,64 @@
+.info
+  padding-bottom: 100px
+  &-block
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+    padding: 40px
+  &-row
+    @include flexbox
+    align-items: flex-start
+  &-top
+    width: 100%
+    padding: 30px 0
+    color: #a5a5a5
+    margin-top: 30px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: -40px
+      width: 625px
+      height: 1px
+      background: #a5a5a5
+  &-main
+    max-width: 300px
+    width: 100%
+    li
+      margin-bottom: 20px
+      padding: 8px 10px
+      cursor: pointer
+      border: 1px solid $color-main
+      transition: .2s
+      &:last-child
+        margin-bottom: 0
+      &.active
+        border: 1px solid $color-aqua
+        background: $color-aqua
+        color: #fff
+  &-second
+    max-width: 160px
+    width: 100%
+    margin-left: 80px
+    display: none
+    li
+      margin-bottom: 20px
+      padding: 8px 0
+      cursor: pointer
+      border: 1px solid #fff
+      transition: .2s
+      &:last-child
+        margin-bottom: 0
+      &.active
+        color: $color-aqua
+        text-decoration: underline
+  &-img
+    flex: 1
+    margin-left: 80px
+    .title-sm
+      margin-bottom: 15px
+    img
+      width: 100% 
+      margin-top: 20px
+    a
+      color: $color-aqua
+      text-decoration: underline

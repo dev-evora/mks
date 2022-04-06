@@ -1,0 +1,37 @@
+.section
+  &-text
+    padding-bottom: 100px
+  &-row
+    @include flexbox
+    align-items: flex-start
+    margin: 0 -15px
+  &-col
+    width: calc(100% / 4 - 30px)
+    margin: 30px 15px 0
+    font-size: 16px
+    ul
+      padding-left: 17px
+      li
+        margin-top: 20px
+        list-style: disc
+
+  &-product
+    padding-bottom: 100px
+    &__control
+      margin-top: 30px
+      @include flexbox
+      align-items: center
+      .pagination
+        margin-left: auto
+    &__switch
+      @include flexbox
+      align-items: center
+      li
+        font-size: 18px
+        color: #a5a5a5
+        margin-right: 30px
+        cursor: pointer
+        &:last-child
+          margin-right: 0
+        &.active
+          color: $color-main

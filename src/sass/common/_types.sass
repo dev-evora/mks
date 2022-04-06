@@ -1,0 +1,35 @@
+.types
+  padding: 100px 0
+  color: #fff
+  position: relative
+  background-image: url(../img/types.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #000942
+    opacity: 0.5
+  .title
+    max-width: 800px
+    margin: 0 auto
+  &-list
+    @include flexbox
+    align-items: flex-start
+    margin: 0 -15px
+    li
+      width: calc(100% / 4 - 30px)
+      margin: 30px 15px 0
+      border: 1px solid $color-aqua
+      background: transparent
+      transition: .2s
+      padding: 20px
+      text-align: center
+      font-weight: 500
+      &:hover
+        background: $color-aqua

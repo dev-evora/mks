@@ -1,0 +1,30 @@
+.lead
+  padding: 100px 0
+  &-row
+    @include flexbox
+    align-items: flex-start
+    justify-content: space-between
+  &-left, &-right
+    width: calc(100% / 2 - 15px)
+  &-right
+    padding-top: 50px
+  &-left
+    .title
+      margin-bottom: 20px
+    .title-xs
+      margin-bottom: 50px
+    .title-md
+      margin-bottom: 35px
+  &-seo
+    color: #828282
+  &-img
+    margin-bottom: 60px
+  &-form
+    max-width: 410px
+    .btn-wrap
+      justify-content: center
+      margin-top: 20px
+    &__gray
+      margin-top: 20px
+      color: #a5a5a5
+      text-align: center

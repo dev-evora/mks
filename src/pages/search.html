@@ -1,0 +1,43 @@
+{% extends 'common/_layout.html' %}
+{% set site_title = 'Результат поиска' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог</a></li>
+    </ul>
+    <h2 class="title">Результат поиска</h2>
+  </div>
+</section>
+
+<section class="search">
+  <div class="container">
+    <form action="#" class="search-form">
+      <h3 class="title-sm">Вы искали:</h3>
+      <div class="search-form__wrap">
+        <input type="text" name="phone" class="search-form__input" value="Арматура" />
+        <button type="submit" class="btn">Поиск</button>
+      </div>
+    </form>
+    <h2 class="title-md">Результаты:</h2>
+    <div class="item-grid">
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}

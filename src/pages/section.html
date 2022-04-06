@@ -1,0 +1,111 @@
+{% extends 'common/_layout.html' %}
+{% set site_title = 'Раздел' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог</a></li>
+    </ul>
+    <h2 class="title">Раздел - Качественные стали</h2>
+    <h3 class="title-xs">Некий Сеошный текст должен быть тут, тихо и незаметно он будет тут существовать и помогать сайту продвигаться к новым вершинам... Некий Сеошный текст должен быть тут, тихо и незаметно он будет тут существовать и помогать сайту продвигаться к новым вершинам...</h3>
+  </div>
+</section>
+
+<section class="rollback-section">
+  <div class="container">
+    {% include 'common/rollback.html' %}
+  </div>
+</section>
+
+<section class="section-text">
+  <div class="container">
+    <h2 class="title">Швеллер горячекатаный</h2>
+    <div class="section-row">
+      <div class="section-col">
+        <h3 class="title-md">Швеллер горячекатаный</h3>
+        <ul>
+          <li>Швеллер горячекатаный длиной – 12 м</li>
+          <li>Швеллер 5 L=6 м</li>
+        </ul>
+      </div>
+      <div class="section-col">
+        <h3 class="title-md">Швеллер 6,5 П L=6 м</h3>
+        <ul>
+          <li>Швеллер 8 L=6 м</li>
+          <li>Швеллер 10 П L=6 м</li>
+          <li>Швеллер 12 L=12 м</li>
+        </ul>
+      </div>
+      <div class="section-col">
+        <h3 class="title-md">Швеллер 14 L=12 м</h3>
+        <ul>
+          <li>Швеллер 16 L=12 м</li>
+        </ul>
+      </div>
+      <div class="section-col">
+        <h3 class="title-md">Швеллер 20 L=12 м</h3>
+        <ul>
+          <li>Швеллер 27 L=12 м</li>
+          <li>Швеллер 30 L=12 м</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-product">
+  <div class="container">
+    <h2 class="title">Продукция:</h2>
+    <div class="section-product__control">
+      <ul class="section-product__switch">
+        <li class="active">От А до Я</li>
+        <li>От Я до А</li>
+      </ul>
+      <ul class="pagination">
+        <li class="pagination-prev"><a href="#"></a></li>
+        <li><a href="#">1</a></li>
+        <li class="active"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li>...</li>
+        <li><a href="#">8</a></li>
+        <li class="pagination-next"><a href="#"></a></li>
+      </ul>
+    </div>
+    <div class="item-grid">
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+      {% include 'common/item.html' %}
+    </div>
+    <div class="section-product__control">
+      <ul class="pagination">
+        <li class="pagination-prev"><a href="#"></a></li>
+        <li><a href="#">1</a></li>
+        <li class="active"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li>...</li>
+        <li><a href="#">8</a></li>
+        <li class="pagination-next"><a href="#"></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

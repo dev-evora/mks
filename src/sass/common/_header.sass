@@ -1,0 +1,201 @@
+.header
+  background: #fff
+  padding: 30px 0
+  position: relative
+  z-index: 100
+  .container
+    @include flexbox
+    align-items: center
+    justify-content: space-between
+  &.fixed
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: 10
+  &.white
+    background: transparent
+    color: #fff
+    .header-logo__main
+      display: none
+    .header-logo__second
+      display: block
+    .header-city
+      color: #fff
+    .header-cart
+      background: #fff
+      &::before
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.76107 2.66643L4.00576 10.7569C4.01482 10.8237 4.03376 10.8873 4.06108 10.9463C4.14329 11.1238 4.30131 11.2591 4.49359 11.3105C4.55233 11.3263 4.6139 11.3342 4.67686 11.3331H11.9997C12.2941 11.3331 12.5536 11.14 12.6382 10.858L14.6382 4.19133C14.6988 3.98948 14.6603 3.77089 14.5345 3.60181C14.4087 3.43274 14.2104 3.3331 13.9997 3.3331H4.21266L3.9934 1.90789C3.98518 1.84831 3.96909 1.79123 3.94621 1.73775C3.90468 1.64037 3.84109 1.55601 3.76254 1.48989C3.68966 1.42843 3.60341 1.38232 3.50879 1.35652C3.44923 1.34021 3.38674 1.33204 3.3228 1.3331H1.99967C1.63148 1.3331 1.33301 1.63158 1.33301 1.99977C1.33301 2.36796 1.63148 2.66643 1.99967 2.66643H2.76107ZM5.2383 9.99977L4.41779 4.66643H13.1037L11.5037 9.99977H5.2383Z' fill='%23333333'/%3E%3Cpath d='M6.66634 13.3331C6.66634 14.0695 6.06939 14.6664 5.33301 14.6664C4.59663 14.6664 3.99967 14.0695 3.99967 13.3331C3.99967 12.5967 4.59663 11.9998 5.33301 11.9998C6.06939 11.9998 6.66634 12.5967 6.66634 13.3331Z' fill='%23333333'/%3E%3Cpath d='M12.6663 13.3331C12.6663 14.0695 12.0694 14.6664 11.333 14.6664C10.5966 14.6664 9.99967 14.0695 9.99967 13.3331C9.99967 12.5967 10.5966 11.9998 11.333 11.9998C12.0694 11.9998 12.6663 12.5967 12.6663 13.3331Z' fill='%23333333'/%3E%3C/svg%3E%0A")
+  &-menu
+    @include flexbox
+    align-items: center
+    li
+      margin-right: 50px
+      &:last-child
+        margin-right: 0
+      a
+        transition: .2s
+        border-bottom: 1px solid transparent
+        &:hover
+          color: $color-aqua
+          border-bottom: 1px solid $color-aqua
+    &__mob
+      display: none
+  &-contact
+    @include flexbox
+    align-items: flex-start
+    flex-direction: column
+  &-city
+    color: #a5a5a5
+  &-phone
+    font-weight: 700
+    font-size: 16px
+    margin-top: 8px
+    transition: .2s
+    border-bottom: 1px solid transparent
+    &:hover
+      color: $color-aqua
+      border-bottom: 1px solid $color-aqua
+  &-email
+    margin-top: 4px
+    transition: .2s
+    border-bottom: 1px solid transparent
+    &:hover
+      color: $color-aqua
+      border-bottom: 1px solid $color-aqua
+  &-cart
+    display: block
+    width: 28px
+    height: 28px
+    border-radius: 100%
+    background: $color-main
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 16px
+      height: 16px
+      margin: auto
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.76107 2.66643L4.00576 10.7569C4.01482 10.8237 4.03376 10.8873 4.06108 10.9463C4.14329 11.1238 4.30131 11.2591 4.49359 11.3105C4.55233 11.3263 4.6139 11.3342 4.67686 11.3331H11.9997C12.2941 11.3331 12.5536 11.14 12.6382 10.858L14.6382 4.19133C14.6988 3.98948 14.6603 3.77089 14.5345 3.60181C14.4087 3.43274 14.2104 3.3331 13.9997 3.3331H4.21266L3.9934 1.90789C3.98518 1.84831 3.96909 1.79123 3.94621 1.73775C3.90468 1.64037 3.84109 1.55601 3.76254 1.48989C3.68966 1.42843 3.60341 1.38232 3.50879 1.35652C3.44923 1.34021 3.38674 1.33204 3.3228 1.3331H1.99967C1.63148 1.3331 1.33301 1.63158 1.33301 1.99977C1.33301 2.36796 1.63148 2.66643 1.99967 2.66643H2.76107ZM5.2383 9.99977L4.41779 4.66643H13.1037L11.5037 9.99977H5.2383Z' fill='white'/%3E%3Cpath d='M6.66634 13.3331C6.66634 14.0695 6.06939 14.6664 5.33301 14.6664C4.59663 14.6664 3.99967 14.0695 3.99967 13.3331C3.99967 12.5967 4.59663 11.9998 5.33301 11.9998C6.06939 11.9998 6.66634 12.5967 6.66634 13.3331Z' fill='white'/%3E%3Cpath d='M12.6663 13.3331C12.6663 14.0695 12.0694 14.6664 11.333 14.6664C10.5966 14.6664 9.99967 14.0695 9.99967 13.3331C9.99967 12.5967 10.5966 11.9998 11.333 11.9998C12.0694 11.9998 12.6663 12.5967 12.6663 13.3331Z' fill='white'/%3E%3C/svg%3E%0A")
+
+  &-search
+    position: relative
+    z-index: 10
+    font-size: 0
+    border: 0
+    &__icon
+      display: block
+      width: 28px
+      height: 28px
+      border-radius: 100%
+      background: $color-aqua
+      position: relative
+      cursor: pointer
+      border: 0
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        width: 16px
+        height: 16px
+        margin: auto
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.66634 2.66667C4.4572 2.66667 2.66634 4.45753 2.66634 6.66667C2.66634 8.8758 4.4572 10.6667 6.66634 10.6667C8.87548 10.6667 10.6663 8.8758 10.6663 6.66667C10.6663 4.45753 8.87548 2.66667 6.66634 2.66667ZM1.33301 6.66667C1.33301 3.72115 3.72082 1.33333 6.66634 1.33333C9.61186 1.33333 11.9997 3.72115 11.9997 6.66667C11.9997 7.89914 11.5816 9.03397 10.8796 9.93709L14.4711 13.5286C14.7314 13.7889 14.7314 14.2111 14.4711 14.4714C14.2107 14.7318 13.7886 14.7318 13.5283 14.4714L9.93677 10.8799C9.03365 11.5819 7.89882 12 6.66634 12C3.72082 12 1.33301 9.61218 1.33301 6.66667Z' fill='white'/%3E%3C/svg%3E%0A")
+    &__form
+      position: absolute
+      width: 208px
+      height: 32px
+      background: #fff
+      border-radius: 32px
+      top: -2px
+      right: -2px
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04)
+      cursor: pointer
+      display: none
+      .header-search__icon
+        position: absolute
+        top: 2px
+        right: 2px
+        z-index: 10
+      input
+        width: 100%
+        height: 100%
+        border: 0
+        border-radius: 32px
+        position: relative
+        z-index: 10
+        font-size: 12px
+        padding-left: 15px
+    &:hover .header-search__form
+      display: block
+
+  &-logo
+    position: relative
+    z-index: 5
+    &__second
+      display: none
+
+  &-burger
+    order: 3
+    display: none
+    width: 28px
+    height: 28px
+    border-radius: 100%
+    background: $color-blue
+    position: relative
+    cursor: pointer
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 14px
+      height: 12px
+      margin: auto
+      background-image: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1C0 0.447715 0.447715 0 1 0H13C13.5523 0 14 0.447715 14 1C14 1.55228 13.5523 2 13 2H1C0.447716 2 0 1.55228 0 1Z' fill='white'/%3E%3Cpath d='M0 6C0 5.44772 0.447715 5 1 5H13C13.5523 5 14 5.44772 14 6C14 6.55228 13.5523 7 13 7H1C0.447716 7 0 6.55228 0 6Z' fill='white'/%3E%3Cpath d='M0 11C0 10.4477 0.447715 10 1 10H13C13.5523 10 14 10.4477 14 11C14 11.5523 13.5523 12 13 12H1C0.447716 12 0 11.5523 0 11Z' fill='white'/%3E%3C/svg%3E%0A")
+
+  &-service
+    display: none
+    position: absolute
+    top: 125px
+    left: 0
+    right: 0
+    background: #fff
+    z-index: 90
+    padding: 40px 0
+    box-shadow: 0 15px 20px 0 rgba(0,0,0,.05)
+    .container
+      @include flexbox
+    &__col
+      width: calc(100% / 3)
+      border-right: 1px solid #B0B0B0
+      padding: 0 100px
+      &:last-child
+        border: 0
+      .title-md
+        margin-bottom: 30px
+    &__menu
+      li
+        margin-top: 30px
+        &:first-child
+          margin-top: 0
+        a
+          transition: .2s
+          border-bottom: 1px solid transparent
+          &:hover
+            color: $color-aqua
+            border-bottom: 1px solid $color-aqua
+        &.active a
+          color: $color-aqua
+          border-bottom: 1px solid $color-aqua
+    &__open.active a
+      color: $color-aqua
+      border-bottom: 1px solid $color-aqua

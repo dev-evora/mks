@@ -1,0 +1,268 @@
+{% extends 'common/_layout.html' %}
+{% set site_title = 'Главная' %}
+{% set home = true %}
+
+{% block content %}
+
+<section class="promo">
+  <div class="video">
+		<video muted autoplay loop>
+			<source src="video/promo.webm" type='video/webm; codecs="vp8, vorbis"'>
+		</video>
+	</div>
+  <div class="container">
+    <h1 class="title center">МКС оптовый и розничный поставщик металлопроката в Санкт-Петербурге и ЛО</h1>
+    <h3 class="title-sm center">Обработка металлопроката и другие услуги</h3>
+    <ul class="promo-nav">
+      <li><a href="#">Труба э/с</a></li>
+      <li><a href="#">Труба ВГП</a></li>
+      <li><a href="#">Труба профильная</a></li>
+      <li><a href="#">Труба э/с</a></li>
+      <li><a href="#">Труба ВГП</a></li>
+      <li><a href="#">Труба профильная</a></li>
+      <li><a href="#">Труба э/с</a></li>
+      <li><a href="#">Труба ВГП</a></li>
+      <li><a href="#">Труба профильная</a></li>
+      <li><a href="#">Труба э/с</a></li>
+      <li><a href="#">Труба ВГП</a></li>
+      <li><a href="#">Труба профильная</a></li>
+    </ul>
+    <form action="#" class="promo-form">
+      <h4 class="title-sm center">Оставьте заявку и получите расчет уже через 15 минут!</h4>
+      <div class="promo-form__wrap">
+        <input type="tel" name="phone" class="promo-form__input masked" placeholder="+7 (___) ___-__-__" />
+        <button type="submit" class="btn">Получить расчет</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="worldprices">
+  <div class="container">
+    <div class="worldprices-text">
+      <img src="img/worldprices.jpg" alt="" class="worldprices-img">
+      <h2 class="title">Мировые цены на металл достигли семилетнего максимума</h2>
+      <ul class="worldprices-list">
+        <li>
+          <img src="img/svg/worldprices-1.svg" alt="">
+          <p>За прошедший год производители металлопроката повысили цены на 80%</p>
+        </li>
+        <li>
+          <img src="img/svg/worldprices-2.svg" alt="">
+          <p>Постоянный рост цен на металл следует воспринимать как норму сезона 2021-2022 г.</p>
+        </li>
+        <li>
+          <img src="img/svg/worldprices-3.svg" alt="">
+          <p>Обращаем внимание, что такое увеличение стоимости сырья произошло впервые за 10 лет и это, безусловно, форс-мажорные обстоятельства.</p>
+        </li>
+        <li>
+          <img src="img/svg/worldprices-4.svg" alt="">
+          <p>Наша компания лояльна к своим постоянным  клиентам и берет на себя часть финансовой нагрузки, устанавливая отпускные цены меньше, чем диктует рынок.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% include 'common/rollback.html' %}
+
+<section class="product">
+  <div class="container">
+    <h2 class="title center">Наша продукция:</h2>
+    <ul class="product-list">
+      <li>
+        <a href="#">
+          <img src="img/product-1.jpg" alt="">
+          <p class="title-md">Арматура</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/product-2.jpg" alt="">
+          <p class="title-md">Швеллер</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/product-3.jpg" alt="">
+          <p class="title-md">Балки</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/product-4.jpg" alt="">
+          <p class="title-md">Профильная труба </p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/product-5.jpg" alt="">
+          <p class="title-md">Лист рифленый</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/product-6.jpg" alt="">
+          <p class="title-md">ПВЛ лист</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/product-7.jpg" alt="">
+          <p class="title-md">Метизы</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/product-8.jpg" alt="">
+          <p class="title-md">Уголок</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/product-9.jpg" alt="">
+          <p class="title-md">Профнастил</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="why">
+  <div class="container">
+    <h2 class="title center">Почему стоит выбрать нас?</h2>
+    <ul class="why-list">
+      <li>
+        <img src="img/svg/why-1.svg" alt="">
+        <h3 class="title-sm">Широкий ассортимент</h3>
+        <p>Многообразие металлов черного, цветного проката, большая часть из которых всегда в наличии. У нас есть позиции из латуни, свинца, бронзы и прочих металлов.</p>
+      </li>
+      <li>
+        <img src="img/svg/why-2.svg" alt="">
+        <h3 class="title-sm">Гарантия качества</h3>
+        <p>Весь ассортимент проходит тщательную проверку качества и обладает всеми необходимыми документами, чтобы подтвердить соответствие с ГОСТ.</p>
+      </li>
+      <li>
+        <img src="img/svg/why-3.svg" alt="">
+        <h3 class="title-sm">Квалифицированные менеджеры</h3>
+        <p>Наши специалисты всегда оказывают профессиональную помощь в подборе продукции и дают все необходимые консультации.</p>
+      </li>
+      <li>
+        <img src="img/svg/why-4.svg" alt="">
+        <h3 class="title-sm">Оперативная доставка</h3>
+        <p>Собственный автопарк позволяет быстро доставлять заказ в любую точку Санкт-Петербурга и области.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="service">
+  <div class="container">
+    <h2 class="title center">Мы также оказываем услуги:</h2>
+    <ul class="service-list">
+      <li>
+        <a href="#">
+          <img src="img/service-1.jpg" alt="">
+          <p class="title-md">Лазерная резка металла</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/service-2.jpg" alt="">
+          <p class="title-md">Гибка металла</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/service-3.jpg" alt="">
+          <p class="title-md">Рубка на гильотине </p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/service-4.jpg" alt="">
+          <p class="title-md">Сверловка металла</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/service-5.jpg" alt="">
+          <p class="title-md">Нарезка резьбы </p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/service-6.jpg" alt="">
+          <p class="title-md">Изготовление изделий по чертежу заказчика</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/service-7.jpg" alt="">
+          <p class="title-md">Резка сортового проката</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="special">
+  <div class="container">
+    <h2 class="title center">Специальное предложение:</h2>
+    {% include 'common/slider.html' %}
+  </div>
+</section>
+
+<section class="lead">
+  <div class="container">
+    <div class="lead-row">
+      <div class="lead-left">
+        <h2 class="title">Отправьте нам заявку и&nbsp;получите расчет сегодня</h2>
+        <h4 class="title-xs">Вы можете сильно сэкономить свое время, если прямо сейчас отправите нам спецификацию. Вам больше ничего не надо будет делать, мы пришлем вам готовое коммерческое предложение в течение 2-х часов!</h4>
+        <h3 class="title-md">Пожалуйста, укажите, куда отправить расчет.</h3>
+        <form action="#" class="lead-form">
+          <input type="text" class="input" placeholder="Имя" />
+          <input type="email" class="input" placeholder="E-mail" />
+          <input type="tel" class="input masked" placeholder="Телефон" />
+          <label class="file">
+            <h4 class="title-sm center">Прикрепите спецификацию:</h4>
+            <input type="file" name="userfile[]" multiple="">
+            <p>Прикрепить файл</p>
+          </label>
+          <p class="lead-form__gray">Мы предоставим вам результат в течение 2 часов</p>
+          <div class="btn-wrap"><button class="btn">Отправить</button></div>
+        </form>
+      </div>
+      <div class="lead-right">
+        <img src="img/lead.jpg" alt="" class="lead-img">
+        <div class="lead-seo">
+          Некий Сеошный текст должен быть тут, тихо и незаметно он будет тут существовать и помогать сайту продвигаться к новым вершинам... Некий Сеошный текст должен быть тут, тихо и незаметно он будет тут существовать и помогать сайту продвигаться к новым вершинам...Некий Сеошный текст должен быть тут, тихо и незаметно он будет тут существовать и помогать сайту продвигаться к новым вершинам...Некий Сеошный текст должен быть тут, тихо и незаметно он будет тут существовать и помогать сайту продвигаться к новым вершинам...
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="types">
+  <div class="container">
+    <h2 class="title center">Какие виды металлоконструкций мы производим</h2>
+    <ul class="types-list">
+      <li>Различные ворота — гаражные, промышленные, распашные, откатные, арочные, с калиткой, садовые и дачные и т.д.</li>
+      <li>Козырьки и навесы — на подъезд, на гараж</li>
+      <li>Арматурные каркасы </li>
+      <li>Фермы</li>
+      <li>Тяги путевые</li>
+      <li>Ограждения — строительные, балконные, газонные, для автостоянок и ритуальные</li>
+      <li>Перила</li>
+      <li>Металлоконструкции по чертежам заказчика</li>
+    </ul>
+  </div>
+</section>
+
+{% include 'common/gallery.html' %}
+
+{% include 'common/delivery.html' %}
+
+{% include 'common/help.html' %}
+
+{% endblock %}

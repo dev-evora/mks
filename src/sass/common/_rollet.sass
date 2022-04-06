@@ -1,0 +1,174 @@
+.rollet
+  padding-bottom: 100px
+  &-title
+    font-size: 20px
+    font-weight: 500
+    color: #fff
+    background: $color-blue
+    padding: 10px 15px
+    min-width: 190px
+    text-align: center
+    margin-bottom: 30px
+  &-item
+    margin-bottom: 100px
+    max-width: 840px
+    width: 100%
+    &:last-child
+      margin-bottom: 0
+    &__img
+      width: 290px
+      height: 220px
+      object-fit: cover
+      object-position: center
+    .title-md
+      margin-bottom: 20px
+  &-price
+    width: calc(100% - 290px - 50px)
+    margin-left: auto
+    .title-sm
+      color: #a5a5a5
+      margin-bottom: 15px
+    &__table
+      border: 1px solid #A5A5A5
+    &__row
+      @include flexbox
+      min-height: 40px
+      border-bottom: 1px solid #A5A5A5
+      &:last-child
+        border: 0
+    &__col
+      flex: 1
+      @include flexbox
+      align-items: center
+      justify-content: center
+      text-align: center
+      border-right: 1px solid #A5A5A5
+      &:last-child
+        border: 0
+      b
+        font-weight: 500
+    .btn-wrap
+      margin-top: 40px
+  &-row
+    @include flexbox
+    align-items: flex-start
+  &-text
+    @include flexbox
+    align-items: flex-start
+    justify-content: space-between
+    &__col
+      width: calc(100% / 2 - 15px)
+      &-full
+        width: 100%
+    &__item
+      margin-top: 30px
+      .title-sm
+        margin-bottom: 15px
+      ul
+        margin-top: 15px
+        list-style: disc
+        padding-left: 13px
+        li
+          margin-top: 5px
+          &:first-child
+            margin-top: 0
+      p
+        margin-top: 15px
+
+  &-table
+    border: 1px solid #A5A5A5
+    margin-top: 40px
+    &__col
+      @include flexbox
+      align-items: center
+      border-right: 1px solid #A5A5A5
+      padding: 15px 20px
+      &:last-child
+        border: 0
+      &:nth-child(2),
+      &:nth-child(4)
+        width: 120px
+      &:nth-child(1),
+      &:nth-child(3)
+        width: calc((100% - 120px - 120px) / 2)
+    &__row
+      @include flexbox
+      border-bottom: 1px solid #A5A5A5
+      &:last-child
+        border: 0
+      &:first-child
+        background: $color-aqua
+        color: #fff
+        font-weight: 500
+        .rollet-table__col
+          &:nth-child(2),
+          &:nth-child(4)
+            display: none
+          &:nth-child(1),
+          &:nth-child(3)
+            width: 50%
+          &:nth-child(3)
+            border-right: 0
+
+  &-slider
+    @include flexbox
+    align-items: flex-start
+    margin-bottom: 60px
+    &__img
+      width: 840px
+      height: 395px
+      background: url(../img/rollet.jpg) no-repeat center
+      background-size: cover
+      position: relative
+      li
+        width: 24px
+        height: 24px
+        border-radius: 100%
+        text-align: center
+        line-height: 24px
+        font-size: 20px
+        font-weight: 500
+        background: $color-aqua
+        color: #fff
+        position: absolute
+        cursor: pointer
+        &.active
+          background: $color-blue
+        &:nth-child(1)
+          top: 145px
+          left: 40px
+        &:nth-child(2)
+          top: 210px
+          left: 130px
+        &:nth-child(3)
+          top: 145px
+          left: 250px
+        &:nth-child(4)
+          top: 230px
+          left: 510px
+    &__item
+      display: none
+      max-width: 350px
+      padding-top: 60px
+      &.active
+        display: block
+      p
+        margin-top: 15px
+        line-height: 1.7
+      h4
+        font-size: 48px
+        font-weight: 700
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 60px
+          width: 140px
+          height: 4px
+          background: $color-main
+          margin: auto 0
+    &__content
+      width: calc(100% - 840px - 60px)
+      margin-left: auto

@@ -1,0 +1,67 @@
+.delivery
+  padding: 100px 0
+  background: $color-gray
+  &.padding
+    padding-bottom: 190px
+  &-text
+    text-align: center
+    margin: 0 auto 30px
+    max-width: 970px
+    p
+      margin-top: 30px
+  &-norms
+    @include flexbox
+    align-items: flex-start
+    justify-content: center
+    margin: 0 -15px
+    li
+      margin: 30px 10px 0
+      width: calc(100% / 6 - 30px)
+      p
+        text-align: center
+        margin-top: 3px
+    &__car
+      width: 164px
+      height: 155px
+      margin: 0 auto
+      background: url(../img/delivery-car.png) no-repeat center bottom
+      position: relative
+      img
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 66px
+        margin: 0 auto
+
+  &-table
+    width: 625px
+    border: 1px solid $color-main
+  &-overflow
+    max-width: 625px
+    margin: 0 auto 40px
+    // overflow-x: scroll
+  &-row
+    @include flexbox
+    min-height: 46px
+    border-bottom: 1px solid $color-main
+    &:last-child
+      border-bottom: 0
+    &:first-child
+      font-weight: 500
+      color: #fff
+      background: $color-aqua
+  &-col
+    @include flexbox
+    align-items: center
+    padding: 5px 20px
+    border-right: 1px solid $color-main
+    &:last-child
+      border-right: 0
+    &:nth-child(1)
+      width: 32%
+    &:nth-child(2)
+      width: 17%
+    &:nth-child(3)
+      width: 27%
+    &:nth-child(4)
+      width: 24%

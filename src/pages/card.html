@@ -1,0 +1,119 @@
+{% extends 'common/_layout.html' %}
+{% set site_title = 'Страница товара' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="card">
+  <div class="container">
+    <div class="card-slider">
+      <div class="card-slider__main">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="img/card.jpg" data-fancybox="gallery"><img src="img/card.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="img/card.jpg" data-fancybox="gallery"><img src="img/card.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="img/card.jpg" data-fancybox="gallery"><img src="img/card.jpg" alt=""></a></div>
+        </div>
+      </div>
+      <div class="card-slider__second">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/card.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/card.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/card.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/card.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/card.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/card.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-info">
+      <h2 class="title-md">Арматура 6 А500С (6 м)</h2>
+      <div class="card-status green">
+        <img src="img/svg/check.svg" alt="">
+        <p>В наличии</p>
+      </div>
+      <div class="card-info__row">
+        <ul class="card-info__list">
+          <li><p>Длина:</p><b>6</b></li>
+          <li><p>Диаметр</p><b>2</b></li>
+          <li><p>Метров в 1 тонне:</p><b>4504.5</b></li>
+          <li><p>Штук в 1 тонне:</p><b>751</b></li>
+        </ul>
+        <ul class="card-info__list">
+          <li><p>Розничная цена</p><b>Уточнять</b></li>
+          <li><p>от 1 до 10 тонн</p><b>39 000 ₽</b></li>
+          <li><p>от 10 тонн</p><b>39 000 ₽</b></li>
+        </ul>
+      </div>
+      <div class="card-info__row">
+        <label class="card-label">
+          <p>Количество</p>
+          <input type="number" class="card-input" placeholder="100" />
+        </label>
+        <label class="card-label">
+          <p>Единицы измерения:</p>
+          <select class="card-input">
+            <option>Метры</option>
+            <option>Метры</option>
+            <option>Метры</option>
+          </select>
+        </label>
+      </div>
+      <div class="btn-wrap"><a href="#" class="btn">Добавить к заказу</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="card-why">
+  <div class="container">
+    <h2 class="title">Почему стоит выбрать нас?</h2>
+    <ul class="card-why__list">
+      <li>
+        <img src="img/svg/card-why-1.svg" alt="">
+        <p>Широкий<br> ассортимент</p>
+      </li>
+      <li>
+        <img src="img/svg/card-why-2.svg" alt="">
+        <p>Гарантия<br> Качества</p>
+      </li>
+      <li>
+        <img src="img/svg/card-why-3.svg" alt="">
+        <p>Опытный<br> менеджер</p>
+      </li>
+      <li>
+        <img src="img/svg/card-why-4.svg" alt="">
+        <p>Оперативная<br> доставка</p>
+      </li>
+    </div>
+  </div>
+</section>
+
+<section class="card-desc">
+  <div class="container">
+    <h2 class="title center">Описание</h2>
+    <div class="card-desc__text">
+      <p>Арматура диаметром 6 мм класса А500С относится к горячекатаному прокату, который чаще выпускается прутками длиной 6 метров (гораздо реже 3 или 9 метров). Прокат представляет собой тонкий стержень с поперечными ребрами, которые предназначены для максимально прочного сцепления с бетонной матрицей.</p>
+      <p>Арматура А500С (6 мм) в прутках производится согласно стандартам ГОСТ 52544-2006 и СТО АСЧМ 7-93.</p>
+    </div>
+  </div>
+</section>
+
+{% include 'common/delivery.html' %}
+
+<section class="recommended">
+  <div class="container">
+    <h2 class="title center">Сопутствующая продукция</h2>
+    {% include 'common/slider.html' %}
+  </div>
+</section>
+
+{% include 'common/help.html' %}
+
+{% endblock %}

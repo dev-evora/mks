@@ -1,0 +1,91 @@
+{% extends 'common/_layout.html' %}
+{% set site_title = 'Каталог' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог</a></li>
+    </ul>
+    <h2 class="title">Каталог</h2>
+    <h3 class="title-xs">Некий Сеошный текст должен быть тут, тихо и незаметно он будет тут существовать и помогать сайту продвигаться к новым вершинам... Некий Сеошный текст должен быть тут, тихо и незаметно он будет тут существовать и помогать сайту продвигаться к новым вершинам...</h3>
+  </div>
+</section>
+
+<section class="catalog">
+  <div class="container">
+    <div class="btn-wrap"><a href="#info" class="link link-scroll">Справочная информация</a></div>
+    <ul class="catalog-tabs">
+      <li class="active" data-id="1">Металлопрокат</li>
+      <li data-id="2">Услуги</li>
+    </ul>
+    <div class="catalog-tab active" data-id="1">
+      <div class="catalog-section">
+        <div class="catalog-title">Сортовый прокат</div>
+        <ul class="catalog-list">
+          <li><a href="#"><img src="img/catalog-1.jpg" alt=""><p>Арматура</p></a></li>
+          <li><a href="#"><img src="img/catalog-2.jpg" alt=""><p>Балка</p></a></li>
+          <li><a href="#"><img src="img/catalog-3.jpg" alt=""><p>Швейлер</p></a></li>
+          <li><a href="#"><img src="img/catalog-4.jpg" alt=""><p>Уголок</p></a></li>
+          <li><a href="#"><img src="img/catalog-5.jpg" alt=""><p>Полоса</p></a></li>
+          <li><a href="#"><img src="img/catalog-6.jpg" alt=""><p>Квадрат</p></a></li>
+        </ul>
+      </div>
+      <div class="catalog-section">
+        <div class="catalog-title">Черный металлопрокат</div>
+        <ul class="catalog-list">
+          <li><a href="#"><img src="img/catalog-7.jpg" alt=""><p>Труба э/с</p></a></li>
+          <li><a href="#"><img src="img/catalog-8.jpg" alt=""><p>Труба б/ш</p></a></li>
+          <li><a href="#"><img src="img/catalog-9.jpg" alt=""><p>Профильная труба</p></a></li>
+          <li><a href="#"><img src="img/catalog-10.jpg" alt=""><p>Лист г/к</p></a></li>
+          <li><a href="#"><img src="img/catalog-11.jpg" alt=""><p>Лист х/к</p></a></li>
+          <li><a href="#"><img src="img/catalog-12.jpg" alt=""><p>ПВЛ лист</p></a></li>
+          <li><a href="#"><img src="img/catalog-13.jpg" alt=""><p>Лист рифленый</p></a></li>
+          <li><a href="#"><img src="img/catalog-14.jpg" alt=""><p>Круг конструкционный</p></a></li>
+          <li><a href="#"><img src="img/catalog-15.jpg" alt=""><p>Квадрат конструкционный</p></a></li>
+          <li><a href="#"><img src="img/catalog-16.jpg" alt=""><p>Шестигранник конструкционный</p></a></li>
+          <li><a href="#"><img src="img/catalog-17.jpg" alt=""><p>Сетка стальная сварная</p></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="catalog-tab" data-id="2">Услуги</div>
+  </div>
+</section>
+
+<section class="info" id="info">
+  <div class="container">
+    <div class="info-block">
+      <h2 class="title">Справочная информация</h2>
+      <div class="info-row">
+        <div class="info-top">Выберите наименование</div>
+        <ul class="info-main">
+          <li>Сортовой металлопрокат</li>
+          <li>Листовой металлопрокат</li>
+          <li>Арматура</li>
+          <li>Проволока вязальная</li>
+          <li>Лист рифленый</li>
+          <li>Арматура</li>
+          <li>Проволока вязальная</li>
+          <li>Лист рифленый</li>
+        </ul>
+        <ul class="info-second">
+          <li data-link="#" data-gost="какой-то гост 1" data-img="img/service-1.jpg">Какой-то товар 1</li>
+          <li data-link="#" data-gost="какой-то гост 2" data-img="img/service-2.jpg">Какой-то товар 2</li>
+          <li data-link="#" data-gost="какой-то гост 3" data-img="img/service-3.jpg">Какой-то товар 3</li>
+          <li data-link="" data-gost="" data-img="img/service-4.jpg">Какой-то товар 4</li>
+          <li data-link="#" data-gost="какой-то гост 5" data-img="img/service-5.jpg">Какой-то товар 5</li>
+        </ul>
+        <div class="info-img">
+          <h3 class="title-sm"></h3>
+          <a href=""></a>
+          <img alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

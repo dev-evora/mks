@@ -1,0 +1,96 @@
+{% extends 'common/_layout.html' %}
+{% set site_title = 'Корзина' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог</a></li>
+    </ul>
+    <h2 class="title">Оформите заявку для формирования счета</h2>
+    <h3 class="title-xs">Отправьте нам заявку, и мы предоставим вам актуальную стоимость по вашей смете в течение 2 часов</h3>
+  </div>
+</section>
+
+<section class="basket">
+  <div class="container">
+    <h3 class="title-md">Смета</h3>
+
+    <div class="price-content">
+      <div class="price-section">
+        <div class="price-section__title">
+          <div class="price-row">
+            <div class="price-col">№</div>
+            <div class="price-col">Наименование</div>
+            <div class="price-col">Кол-во</div>
+            <div class="price-col">Ед. Изм.</div>
+            <div class="price-col"></div>
+          </div>
+        </div>
+        <div class="price-section__content">
+          <div class="price-table">
+            <div class="price-row">
+              <div class="price-col">1</div>
+              <div class="price-col">Арматура 6 А500С (6 м)</div>
+              <div class="price-col">1 000</div>
+              <div class="price-col">Метры</div>
+              <div class="price-col">
+                <a href="#" class="price-edit">Изменить</a>
+                <a href="#" class="price-del"></a>
+              </div>
+            </div>
+            <div class="price-row">
+              <div class="price-col">1</div>
+              <div class="price-col">Арматура 6 А500С (6 м)</div>
+              <div class="price-col">1 000</div>
+              <div class="price-col">Метры</div>
+              <div class="price-col">
+                <a href="#" class="price-edit">Изменить</a>
+                <a href="#" class="price-del"></a>
+              </div>
+            </div>
+            <div class="price-row">
+              <div class="price-col">1</div>
+              <div class="price-col">Арматура 6 А500С (6 м)</div>
+              <div class="price-col">1 000</div>
+              <div class="price-col">Метры</div>
+              <div class="price-col">
+                <a href="#" class="price-edit">Изменить</a>
+                <a href="#" class="price-del"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="title center">Контактные данные</h2>
+    <form action="#" class="basket-form">
+      <div class="basket-form__row">
+        <label class="checkbox">
+          <input type="radio" name="type" />
+          <p>Юридическое лицо</p>
+        </label>
+        <label class="checkbox">
+          <input type="radio" name="type" />
+          <p>Физическое лицо</p>
+        </label>
+      </div>
+      <input type="text" class="input" placeholder="ФИО" />
+      <input type="tel" class="input masked" placeholder="Телефон" />
+      <input type="email" class="input" placeholder="E-mail" />
+      <textarea class="textarea" placeholder="Комментарий"></textarea>
+      <div class="btn-wrap">
+      <label class="checkbox">
+        <input type="checkbox" name="politic" />
+        <p>Согласен на обработку персональных данных</p>
+      </label>
+      </div>
+      <div class="btn-wrap"><button class="btn">Получить счет</button></div>
+    </form>
+  </div>
+</section>
+
+{% endblock %}

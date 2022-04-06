@@ -1,0 +1,107 @@
+.price
+  padding-bottom: 100px
+  &-btn
+    @include flexbox
+    align-items: center
+    text-decoration: underline
+    color: $color-aqua
+    &::before
+      content: ''
+      width: 16px
+      height: 16px
+      display: block
+      background: url(../img/svg/download.svg) no-repeat
+      margin-right: 15px
+  &-table
+    border: 1px solid #A5A5A5
+    display: none
+  &-row
+    border-bottom: 1px solid #A5A5A5
+    @include flexbox
+    min-height: 44px
+    &:last-child
+      border-bottom: 0
+  &-col
+    border-right: 1px solid #A5A5A5
+    // height: 100%
+    @include flexbox
+    align-items: center
+    color: $color-blue
+    &:last-child
+      border-right: 0
+    &:nth-child(1)
+      font-size: 18px
+      width: 55px
+      justify-content: center
+    &:nth-child(2)
+      flex: 1
+      padding: 0 25px
+    &:nth-child(3), &:nth-child(4)
+      width: 120px
+      padding: 0 15px
+    &:nth-child(5)
+      width: 170px
+      padding: 0 15px
+      color: $color-main
+  &-content
+    margin: 50px 0
+
+  &-section__title, &-subsection__title
+    .price-row
+      border-color: transparent
+    .price-col
+      color: #fff
+      font-weight: 500
+      border-color: transparent
+  &-section__title
+    background: $color-aqua
+  &-subsection__title
+    background: #7f99ac
+
+  &-control
+    @include flexbox
+    align-items: center
+    justify-content: center
+    // &__col
+    //   width: calc(100% / 3)
+    //   @include flexbox
+    //   align-items: center
+    // .pagination
+    //   margin-left: auto
+    // &__end
+    //   margin: 0 auto
+    //   border-bottom: 1px solid $color-blue
+    //   color: $color-blue
+    &__all
+      border-bottom: 1px solid $color-aqua
+      color: $color-aqua
+
+  &-edit
+    color: $color-aqua
+    border-bottom: 1px solid $color-aqua
+  &-del
+    width: 14px
+    height: 14px
+    margin-left: auto
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.9598 3.0402C8.77286 0.853266 5.22714 0.853266 3.0402 3.0402C0.853266 5.22714 0.853266 8.77286 3.0402 10.9598C5.22714 13.1467 8.77286 13.1467 10.9598 10.9598C13.1467 8.77286 13.1467 5.22714 10.9598 3.0402ZM2.05025 2.05025C4.78392 -0.683418 9.21608 -0.683418 11.9497 2.05025C14.6834 4.78392 14.6834 9.21608 11.9497 11.9497C9.21608 14.6834 4.78392 14.6834 2.05025 11.9497C-0.683418 9.21608 -0.683418 4.78392 2.05025 2.05025ZM9.47487 4.52513C9.74824 4.79849 9.74824 5.24171 9.47487 5.51508L7.98995 7L9.47487 8.48492C9.74824 8.75829 9.74824 9.20151 9.47487 9.47487C9.20151 9.74824 8.75829 9.74824 8.48492 9.47487L7 7.98995L5.51508 9.47487C5.24171 9.74824 4.79849 9.74824 4.52513 9.47487C4.25176 9.20151 4.25176 8.75829 4.52513 8.48492L6.01005 7L4.52513 5.51508C4.25176 5.24171 4.25176 4.79849 4.52513 4.52513C4.79849 4.25176 5.24171 4.25176 5.51508 4.52513L7 6.01005L8.48492 4.52513C8.75829 4.25176 9.20151 4.25176 9.47487 4.52513Z' fill='%23001592'/%3E%3C/svg%3E%0A")
+
+.price
+  .price
+    &-section__title, &-subsection__title
+      cursor: pointer
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 20px
+        margin: auto 0
+        width: 9px
+        height: 7px
+        background-image: url("data:image/svg+xml,%3Csvg width='9' height='7' viewBox='0 0 9 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 7L0.602887 0.249999L8.39711 0.25L4.5 7Z' fill='white'/%3E%3C/svg%3E%0A")
+      .price-col:first-child
+        display: none
+
+.price-section:first-child .price-table
+  display: block

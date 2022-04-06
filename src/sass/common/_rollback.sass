@@ -1,0 +1,40 @@
+.rollback
+  padding: 100px
+  color: #fff
+  position: relative
+  background-image: url(../img/rollback.jpg)
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #0e1b38
+    opacity: 0.7
+  .title
+    max-width: 1000px
+    margin: 0 auto 20px
+    position: relative
+    z-index: 2
+  &-list
+    max-width: 900px
+    margin: 0 auto 35px
+    @include flexbox
+    align-items: center
+    justify-content: center
+    line-height: 2
+    position: relative
+    z-index: 2
+    text-align: center
+    li
+      margin: 0 15px
+  .btn-wrap
+    justify-content: center
+    position: relative
+    z-index: 2
+  &-section
+    padding-bottom: 100px
