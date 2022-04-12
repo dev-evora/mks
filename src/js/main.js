@@ -96,10 +96,15 @@ $('.header-burger').click(function(){
 	}
 })
 
-$('.header-service__open').click(function(){
-	$(this).toggleClass('active')
-	$('.header-service').slideToggle();
-})
+$('.header-service__open, .header-service').hover(
+	function() {
+		$('.header-service__open').addClass('active');
+		$('.header-service').show();
+	}, function() {
+		$('.header-service__open').removeClass('active');
+		$('.header-service').hide();
+	}
+);
 
 $(function () {
 	var e = $(".file p").html();

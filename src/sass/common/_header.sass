@@ -196,6 +196,17 @@
         &.active a
           color: $color-aqua
           border-bottom: 1px solid $color-aqua
-    &__open.active a
-      color: $color-aqua
-      border-bottom: 1px solid $color-aqua
+    &__open
+      position: relative
+      &.active
+        a
+          color: $color-aqua
+          border-bottom: 1px solid $color-aqua
+        &::before
+          content: ''
+          position: absolute
+          top: -200px
+          left: -2000px
+          right: -2000px
+          bottom: -125px
+          z-index: -1
