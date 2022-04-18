@@ -61,17 +61,28 @@ $('.info-second li').click(function(){
 
 	let img = $(this).attr('data-img');
 	$('.info-img img').attr('src', img);
-
-	let link  = $(this).attr('data-link'),
-			gost 	= $(this).attr('data-gost');
-	$('.info-img a').attr('href', link).text(gost);
 	
 	let mainTitle = $('.info-main li.active').text(),
 			secondTitle = $('.info-second li.active').text();
 	$('.info-img .title-sm').text(mainTitle + ' - ' + secondTitle);
 
 	$('.info-img').show();
+
+	getGostLink(this);
 })
+
+function getGostLink(el) {
+	const link = $(el).attr('data-link').split(';')
+	const gost = $(el).attr('data-gost').split(';')
+
+	const result = link.map((item, i) => ({ link: item, gost: gost[i] }));
+
+	$('.info-gost').empty();
+
+	result.forEach(({ link, gost }) => {
+		$('.info-gost').append(`<a href=${link}>${gost}</a>`)
+	})
+}
 
 $(".link-scroll").on("click", function (event) {
 	event.preventDefault();

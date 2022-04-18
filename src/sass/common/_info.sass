@@ -36,13 +36,12 @@
         background: $color-aqua
         color: #fff
   &-second
-    max-width: 160px
+    max-width: 140px
     width: 100%
-    margin-left: 80px
+    margin-left: 30px
     display: none
     li
-      margin-bottom: 20px
-      padding: 8px 0
+      margin-bottom: 15px
       cursor: pointer
       border: 1px solid #fff
       transition: .2s
@@ -53,7 +52,7 @@
         text-decoration: underline
   &-img
     flex: 1
-    margin-left: 80px
+    margin-left: 30px
     .title-sm
       margin-bottom: 15px
     img
@@ -62,3 +61,9 @@
     a
       color: $color-aqua
       text-decoration: underline
+  &-gost
+    @include flexbox
+    align-items: flex-start
+    margin-right: -15px
+    a
+      margin-right: 15px
