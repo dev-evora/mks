@@ -172,3 +172,9 @@ if(rollet){
    	timer();
 	})
 }
+
+const mh = Math.max.apply(Math, $('.rollet-slider__item').map(function(){  
+	return $(this).height();
+}).get());
+
+$('.rollet-slider__item').css('min-height', mh);
