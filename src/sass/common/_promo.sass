@@ -1,9 +1,10 @@
 .promo
-  padding: 200px 0 110px
+  padding: 260px 0 110px
   color: #fff
   position: relative
   background: url(../img/promo.jpg) no-repeat center
   background-size: cover
+  min-height: 800px
   &::before
     content: ''
     position: absolute
@@ -53,3 +54,21 @@
       border: 0
       @include placeholder
         color: #9a9a9a
+
+  &-list
+    @include flexbox
+    align-items: flex-start
+    justify-content: center
+    margin: 80px -10px 0
+    li
+      width: 190px
+      margin: 30px 10px 0
+      text-align: center
+      font-size: 14px
+      font-weight: 500
+      img
+        margin: 0 auto 10px
+        height: 56px
+        width: 56px
+        object-fit: scale-down
+        object-position: center
